@@ -1,0 +1,20 @@
+<html><head><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script><script>
+    $(document).ready(
+    function(){
+    $("#slideup").click(
+    function(){
+    $("img").slideUp("slow");
+    }
+    );
+    $("#slidedown").click(
+    function(){
+    $("img").slideDown("fast");
+    }
+    );
+    $("#slidetoggle").click(
+    function(){
+    $("img").slideToggle();
+    }
+    );
+    }
+    );</script></head><body> <button id="slideup">Hide Apple</button><button id="slidedown">Show Apple</button><button id="slidetoggle">Show/Hide Apple</button><p>If you click on the button, Apple will Appear/disappear.</p><img src="apple.jpg" alt="Apple" /></body></html>
